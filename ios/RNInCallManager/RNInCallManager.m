@@ -416,6 +416,14 @@ RCT_EXPORT_METHOD(stopRingtone)
     }
 }
 
+RCT_EXPORT_METHOD(playBusytone:(NSString *)busytoneUriType)
+{
+    if (busytoneUriType.length > 0) {
+        NSLog(@"RNInCallManager.playBusytone(): play busytone");
+        [self startBusytone:busytoneUriType];
+    }
+}
+
 - (void)_checkRecordPermission
 {
     NSString *recordPermission = @"unsupported";

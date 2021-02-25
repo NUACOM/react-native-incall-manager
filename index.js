@@ -116,6 +116,10 @@ class InCallManager {
         _InCallManager.startRingback(ringback);
     }
 
+    playBusytone() {
+        _InCallManager.playBusytone('_BUNDLE_');
+    }
+
     stopRingback() {
         _InCallManager.stopRingback();
     }
